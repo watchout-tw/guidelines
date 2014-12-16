@@ -7,6 +7,7 @@
 3. [HTML](HTML.md)
 4. [CSS](CSS.md)
 5. [JavaScript](JavaScript.md)
+6. [參考](#reference)
 
 <a name="general-principles"></a>
 ## 1. 通用原則
@@ -25,3 +26,8 @@
 * 去掉每行後面以及檔案結尾的所有空格。
 
 
+## 6. 參考
+
+* [SUIT CSS](https://github.com/suitcss/suit/blob/master/doc/STYLE.md)
+* [Medium’s CSS is actually pretty f***ing good.](https://medium.com/@fat/mediums-css-is-actually-pretty-fucking-good-b8e2a6c78b06)
+* [code-guide by @mdo](http://codeguide.co/)

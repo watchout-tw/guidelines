@@ -1,20 +1,27 @@
 # HTML
 
-## Format
+** 目錄 **
+* [格式](#html-format)
+  * [例外](#html-format-exception)
+* [屬性排序](#html-attrs)
+* [命名](#html-naming)
+* [實際範例](#html-example)
 
-* Always use lowercase tag and attribute names.
-* Write one discrete, block-level element per line.
-* Use one additional level of indentation for each nested block-level element.
-* Use valueless boolean attributes (e.g. `checked` rather than
-  `checked="checked"`).
-* Always use double quotes to quote attribute values.
-* Omit the `type` attributes from `link` stylesheet, `style` and `script`
-  elements.
+<a name="html-format"></a>
+## 格式
+
+* 標籤(tag)及屬性(attribute)名字永遠使用小寫。
+* 每一行只寫一個 block-level 的元素。
+* 每個巢狀的 block-level 元素必須使用縮排。
+* 使用無給值得數用 (例如: `checked` 而不是 `checked="checked"`)
+* 屬性值要用雙引號。
+* 忽略 `link` `style` `script` 的 `type` 屬性
+* 要使用關閉標籤。
 * Always include closing tags.
 
-(Keep line-length to a sensible maximum, e.g., 80 columns.)
+(每行長度最大值必須合理，例如： 80行寬。)
 
-Example:
+範例:
 
 ```html
 <div class="Tweet">
@@ -25,13 +32,12 @@ Example:
   <button disabled>Reply</button>
 </div>
 ```
+<a name="html-format-exception"></a>
+### 例外
 
-### Exceptions and slight deviations
+元素擁有多個屬性必須重新安排成一行一個屬性，能增進可讀性還有產生有用的差異比較。
 
-Elements with multiple attributes can have attributes arranged across multiple
-lines in an effort to improve readability and produce more useful diffs.
-
-Example:
+範例:
 
 ```html
 <a class="{{class}}"
@@ -44,11 +50,11 @@ Example:
 
 
 <a name="html-attrs"></a>
-## HTML attribute order
+## 屬性排序
 
-HTML attributes should be listed in alphabetical order.
+HTML 屬性應該使用字母排序。
 
-Example:
+範例：
 
 ```html
 <a class="{{class}}" data-name="{{name}}" href="{{url}}" id="{{id}}">{{text}}</a>
@@ -56,17 +62,16 @@ Example:
 
 
 <a name="html-naming"></a>
-## Naming
+## 命名
 
-Naming is hard, but very important. It's a crucial part of the process of
-developing a maintainable code base. Don't be afraid to rename components.
+命名很困難但是很重要。這是在開發可維護程式庫時，關鍵的一部分。不要害怕重新命名元件。
 
-* Use clear, thoughtful, and appropriate names for HTML classes. The names
-  should be informative both within HTML and CSS files.
+* HTML的類別必須使用清楚，有意義且適當的名字。名字必須同時在HTML 和 CSS 檔案中提供充足資訊。
+* 類別名稱要避免 _有系統_ 使用縮寫。不要讓事情難以理解。
 * Avoid _systematic_ use of abbreviated class names. Don't make things
   difficult to understand.
 
-Example with "bad" names:
+壞的示範：
 
 ```html
 <div class="cb s-scr"></div>
@@ -82,7 +87,7 @@ Example with "bad" names:
 }
 ```
 
-Example with better names:
+好的範例：
 
 ```html
 <div class="ColumnBody is-scrollable"></div>
@@ -98,10 +103,10 @@ Example with better names:
 }
 ```
 
+<a name="html-example"></a>
+## 實際範例
 
-## HTML practical example
-
-An example of various conventions.
+一個混和不同慣例的範例。
 
 ```html
 <!DOCTYPE html>

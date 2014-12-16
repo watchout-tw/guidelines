@@ -1,6 +1,7 @@
 # HTML
 
-** 目錄 **
+**目錄**
+
 * [格式](#html-format)
   * [例外](#html-format-exception)
 * [屬性排序](#html-attrs)
@@ -13,11 +14,10 @@
 * 標籤(tag)及屬性(attribute)名字永遠使用小寫。
 * 每一行只寫一個 block-level 的元素。
 * 每個巢狀的 block-level 元素必須使用縮排。
-* 使用無給值得數用 (例如: `checked` 而不是 `checked="checked"`)
+* 使用無給值得數用 (例如: `checked` 而不是 `checked="checked"`)。
 * 屬性值要用雙引號。
-* 忽略 `link` `style` `script` 的 `type` 屬性
+* 忽略 `link`、`style`和`script` 的 `type` 屬性。
 * 要使用關閉標籤。
-* Always include closing tags.
 
 (每行長度最大值必須合理，例如： 80行寬。)
 

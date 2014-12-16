@@ -1,76 +1,70 @@
 # CSS
 
-## Comments
+**目錄**
 
-Well commented code is extremely important. Take time to describe components,
-how they work, their limitations, and the way they are constructed. Don't leave
-others in the team guessing as to the purpose of uncommon or non-obvious
-code.
+* [註解](#css-comments)
+* [格式](#css-format)
+  * [宣告排序](#css-order)
+  * [例外](#css-exception)
+* [實際範例](#css-example)
 
-Comment style should be simple and consistent within a single code base.
+<a name="css-comments"></a>
+## 註解
+
+好的註解非常重要。花點時間描述元件如何構成，如何運作，有那些限制。不要團隊中的其他人猜測不常用或不明顯的程式碼目的。
+
+註解風格應該要簡單且和程式庫一致。
 
 * Place comments on a new line above their subject.
-* Keep line-length to a sensible maximum, e.g., 80 columns.
+* 每行長度最大值必須合理，例如： 80行寬。
 * Make liberal use of comments to break CSS code into discrete sections.
-* Use "sentence case" comments and consistent text indentation.
+* 保持註解縮排一致還有句首字母大寫。
 * Use numeric end-of-line comments to reference documentation for individual declarations.
 
-Tip: configure your editor to provide you with shortcuts to output agreed-upon
-comment patterns.
+提示： 設定你的編輯器使用快速鍵以提供你產生以上的註解模式。
 
-Example:
+範例：
 
 ```css
 /**
- * Short description using Doxygen-style comment format
+ * 使用 Doxygen-style 註解格式簡短的描述。
  *
- * The first sentence of the long description starts here and continues on this
- * line for a while finally concluding here at the end of this paragraph.
+ * 長的敘述第一句要從這裡開始，並且包括這行的段落。
  *
- * The long description is ideal for more detailed explanations and
- * documentation. It can include example HTML, URLs, or any other information
- * that is deemed necessary or useful.
+ * 給予更多解釋和文件內容是理想的長敘述內容。包括HTML、網址或其他必要或有用資訊。
  *
- * TODO: This is a todo statement that describes an atomic task to be completed
- *   at a later date. It wraps after 80 characters and following lines are
- *   indented by 2 spaces.
+ * TODO: 這裏條列日後要完成的工作。必須在80字以內，並且每行用兩個空格縮排。
  *
- * @tag This is a tag named 'tag'
+ * @tag 這是命名為tag的標籤
  *
- * 1. A helpful description of a declaration's purpose.
- * 2. Another declaration or collection of declarations can reference this
- *    comment with an inline comment corresponding to the lists number.
+ * 1. 提供聲明目的有幫助的描述。
+ * 2. 其他聲明或任何這份註解能夠參考的聲明。
+ *
  */
 
-/* Thematic section comment block
+/* 主題註解區塊
    ========================================================================== */
 
-/* Basic comment */
+/* 基本註解 */
 ```
+<a name="css-format"></a>
+## 格式
 
-## Format
+程式碼必須確保：容易閱讀、清楚地註解、減少錯誤發生機會、產生有意義的差異比較。
 
-The chosen code format ensures that code is: easy to read; easy to clearly
-comment; minimizes the chance of accidentally introducing errors; and results
-in useful diffs and blames.
-
-* Use one discrete selector per line in multi-selector rulesets.
-* Include a single space before the opening brace of a ruleset.
-* Include one declaration per line in a declaration block.
-* Use one level of indentation for each declaration.
-* Include a single space after the colon of a declaration.
-* Use lowercase and shorthand hex values, e.g., `#aaa`.
-* Use single or double quotes consistently. Preference is for double quotes,
-  e.g., `content: ""`.
-* Quote attribute values in selectors, e.g., `input[type="checkbox"]`.
+* 使用多選擇器時保持一行一個選擇器。
+* 左大括號前使用一個空格。
+* 每條宣告自成一行。
+* 每個宣告使用第一層縮排。
+* 每個宣告的冒號後面使用一個空格。
+* 使用小寫和簡寫的 hex 值，例如: `#aaa`。
+* 保持單引號或雙引號的一致。盡量使用雙引號，例如：`content: ""`。
+* 選擇器中的屬性值要使用引號，例如： `input[type="checkbox"]`。
 * _Where allowed_, avoid specifying units for zero-values, e.g., `margin: 0`.
-* Include a space after each comma in comma-separated property or function
-  values.
-* Include a semi-colon at the end of the last declaration in a declaration
-  block.
-* Place the closing brace of a ruleset in the same column as the first
-  character of the ruleset.
-* Separate each ruleset by a blank line.
+* 每個逗號後面保持一個空格。
+* 每個宣告後面必須要有分號。
+* 右大括號必須和規則集起始的字母在同一個縱行。
+* 每個規則集必須用一個空行分隔。
 
 ```css
 .selector-1,
@@ -89,11 +83,10 @@ in useful diffs and blames.
   padding: 10px;
 }
 ```
+<a name="css-order"></a>
+### 宣告排序
 
-### Declaration order
-
-Use alphabetical ordering of declarations unless the cascade absolutely
-requires otherwise.
+使用字母排序除非有其他需求。
 
 ```css
 .selector {
@@ -108,12 +101,10 @@ requires otherwise.
   width: 100%;
 }
 ```
+<a name="css-exception"></a>
+### 例外
 
-### Exceptions and slight deviations
-
-Large blocks of single declarations can use a slightly different, single-line
-format. In this case, a space should be included after the opening brace and
-before the closing brace.
+單一宣告的區塊使用一行格式。在左大括號後面和右大括號前面使用空格。
 
 ```css
 .selector-1 { width: 10%; }
@@ -121,9 +112,7 @@ before the closing brace.
 .selector-3 { width: 30%; }
 ```
 
-Long, comma-separated property values - such as collections of gradients or
-shadows - can be arranged across multiple lines in an effort to improve
-readability and produce more useful diffs.
+逗號分隔得值如果很長，像是 gradient 或 shadow，要重新排成多行來增進可讀性和增加有用的差異比較。
 
 ```css
 .selector {
@@ -135,10 +124,10 @@ readability and produce more useful diffs.
     2px 2px 1px 1px #ccc inset;
 }
 ```
+<a name="css-example"></a>
+## 實際範例
 
-## Practical example
-
-An example of various conventions.
+混合不同慣例的範例。
 
 ```css
 /** @define Grid; use strict */

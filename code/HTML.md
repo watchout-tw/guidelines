@@ -68,8 +68,6 @@ HTML 屬性應該使用字母排序。
 
 * HTML的類別必須使用清楚，有意義且適當的名字。名字必須同時在HTML 和 CSS 檔案中提供充足資訊。
 * 類別名稱要避免 _有系統_ 使用縮寫。不要讓事情難以理解。
-* Avoid _systematic_ use of abbreviated class names. Don't make things
-  difficult to understand.
 
 壞的示範：
 

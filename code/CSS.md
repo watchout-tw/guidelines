@@ -15,11 +15,11 @@
 
 註解風格應該要簡單且和程式庫一致。
 
-* Place comments on a new line above their subject.
+* 在主題之前註解在新的一行。
 * 每行長度最大值必須合理，例如： 80行寬。
-* Make liberal use of comments to break CSS code into discrete sections.
+* 自由地使用註解將 CSS 程式碼分成不同區塊。
 * 保持註解縮排一致還有句首字母大寫。
-* Use numeric end-of-line comments to reference documentation for individual declarations.
+* 用數行註解作為獨立宣告的文件參考。
 
 提示： 設定你的編輯器使用快速鍵以提供你產生以上的註解模式。
 

@@ -1,24 +1,21 @@
-"use strict";
+/*
+ * Button
+ */
 
-var React = require("react/addons");
-require("./button.css");
+import React from "react/addons";
+import "./button.css";
 
-module.exports = React.createClass({
+export default React.createClass({
   displayName: "Button",
 
   render () {
-    return this._render(this.props, this.state);
-  },
-
-  _render (props, state) {
+    var {name} = this.props;
 
     return (
       <a
         className = "btn" >
-        { props.name }
+        { name }
       </a>
     );
   }
-
 });
-

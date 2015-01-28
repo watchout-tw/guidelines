@@ -13,7 +13,7 @@ MyComponentName
 |   +-- Button-background.jpg
 +-- origins
 |   +-- Button.ai
-+-- Button.css 
++-- Button.css
 +-- Button.jsx
 +-- Button.md
 ```
@@ -26,15 +26,28 @@ It describes how component works. Please write as more details as you know.
 ##  Button.jsx
 ### 規則 Rules
   * 若是屬性超過兩個以字母排序的方式將他們分置在每一行。
+  * 縮排一律使用 **2** 個空白。
+  * 必須加 **_** 在客製化函數名稱前面，並且一律至於 `render` 函數之下。
+  * 一律使用 **Destructing** 取物件內屬性。
+  * 函數內請使用以下方式排列。
   
-  
+  ```
+    /* Destrucintg */
+      
+    /* Assignment */
+      
+    /* return */
+  ```
+
+
   * seperate to each line if tag contains two more attributes and by alphabetical order.
-  
+  * indent always using **2** spaces.
+
 ### 變數命名原則 Naming convention about variables
   * 元件名稱：**PascalCase**，首字母要大寫。
   * 變數：**camelCase**，首字母要小寫。
-  
-  
+
+
   * component name: **PascalCase**
   * variables: **camelCase**
 
@@ -43,9 +56,9 @@ It describes how component works. Please write as more details as you know.
 /*
  * Details about functions of the component
  * author: Ly <lyforever62@hotmail.com>
- * 
+ *
  */
- 
+
 /* Dependencies */
 import React from "react/addons";
 import "./Button.css";
@@ -73,20 +86,20 @@ export default React.createClass({
   * 變數名稱開頭要包含兩個 **-** 和 **元件名稱**。
   * 將所有變數放在 `:root` 選擇器中。
   * 請使用有意義的顏色名字或 hwb 取代十六進位碼。
-  
-  
+
+
   * Use naming convention of **SUITCSS**.
   * Variable name start with two dashes and its namespace.
   * Put all variables in `:root` selector.
   * Use meaningful or hwb color instead of HEX code.
-  
+
 
 ### 範例 Example
 ```
 /*
  * Details about styles of the component
  * author: Ly <lyforever62@hotmail.com>
- * 
+ *
  */
 :root {
   --Button-color: green;

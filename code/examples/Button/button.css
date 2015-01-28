@@ -1,8 +1,15 @@
+### Example
+```
+/*
+ * Details about styles of the component
+ * author: Ly <lyforever62@hotmail.com>
+ *
+ */
 :root {
-  --my-color: green;
+  --Button-color: green;
 }
 
-.btn {
+.Button {
   color: var(--my-color);
   display: flex;
 }

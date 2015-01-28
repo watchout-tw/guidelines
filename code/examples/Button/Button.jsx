@@ -1,10 +1,14 @@
 /*
- * Button
+ * Details about functions of the component
+ * author: Ly <lyforever62@hotmail.com>
+ *
  */
 
+/* Dependencies */
 import React from "react/addons";
-import "./button.css";
+import "./Button.css";
 
+/* Module */
 export default React.createClass({
   displayName: "Button",
 

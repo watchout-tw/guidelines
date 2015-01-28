@@ -10,6 +10,6 @@
 }
 
 .Button {
-  color: var(--my-color);
+  color: var(--Button-color);
   display: flex;
 }

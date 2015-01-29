@@ -30,12 +30,18 @@ It describes how component works. Please write as more details as you know.
   * 必須加 **_** 在客製化函數名稱前面，並且一律至於 `render` 函數之下。
   * 一律使用 **Destructing** 取物件內屬性。
   * 函數內請使用以下方式排列。
-  
+
   ```
+    /* Require Vendor Files */
+    /* Require CSS Files */
+    /* Require Components */
+    /* Rrequire Actions */
+    /* Rrequire Stores */
+
     /* Destrucintg */
-      
+
     /* Assignment */
-      
+
     /* return */
   ```
 

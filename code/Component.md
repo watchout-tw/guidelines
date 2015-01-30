@@ -25,7 +25,7 @@ It describes how component works. Please write as more details as you know.
 
 ##  Button.jsx
 ### 規則 Rules
-  * 若是屬性超過兩個以字母排序的方式將他們分置在每一行。
+  * 若是屬性超過兩個以字母排序的方式將他們分置在每一行，必須一開始就換行。
   * 縮排一律使用 **2** 個空白。
   * 必須加 **_** 在客製化函數名稱前面，並且一律至於 `render` 函數之下。
   * 一律使用 **Destructing** 取物件內屬性。

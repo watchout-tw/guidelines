@@ -92,7 +92,7 @@ export default React.createClass({
   * 變數名稱開頭要包含兩個 **-** 和 **元件名稱**。
   * 將所有變數放在 `:root` 選擇器中。
   * 請使用有意義的顏色名字或 hwb 取代十六進位碼。
-
+  * 命名要有意義，避免變成連字符。
 
   * Use naming convention of **SUITCSS**.
   * Variable name start with two dashes and its namespace.
